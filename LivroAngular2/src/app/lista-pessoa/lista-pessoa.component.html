@@ -7,3 +7,16 @@
 		
 	</li>
 </ul>
+
+<label for="nome">Digite seu nome</label>
+<input type="text" id="nome" value="Alan Andrade" [(ngModel)]="nome">
+<p>{{nome}}</p>
+
+<!--Two-way data binding = Se for atualizado pelo template, o valor vai para a classe
+do componente; se for atualizado pela classe do componente, o valor é enviado para o template-->
+
+<ul>
+	<li *ngFor="let pessoa of pessoas">
+		{{pessoa}}
+	</li>
+</ul>

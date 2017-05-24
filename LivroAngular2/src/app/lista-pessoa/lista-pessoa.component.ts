@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 
 export class ListaPessoaComponent implements OnInit {
 	
-	pessoas: string[]; 
+	pessoas: string [] = ['João', 'Maria', 'Angular 2'];
+
+  nome: string = "Alan Andrade";
 
   	constructor() { }
 
@@ -18,5 +20,4 @@ export class ListaPessoaComponent implements OnInit {
   	listar(){
 
   	}
-
 }

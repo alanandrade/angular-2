@@ -1,9 +1,10 @@
 <h1>
-  {{title}}
+  {{title}} <!--Interpolation = recebe da classe a variavel e adiciona no template-->
 </h1>
 
-<img [src]="foto">
+<img [src]="foto"> <!--Property binding = quando queremos passar informações da
+classe do componente para alguma propriedade de tag do template-->
 
-<button (click)="msgAlerta()">Enviar Alerta</button>
+<button (click)="msgAlerta()">Enviar Alerta</button> <!--Event binding = Caminho inverso, evia do template para a classe do componente-->
 
 <app-lista-pessoa></app-lista-pessoa>

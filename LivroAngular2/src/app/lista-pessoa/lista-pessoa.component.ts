@@ -5,11 +5,18 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './lista-pessoa.component.html',
   styleUrls: ['./lista-pessoa.component.css']
 })
+
 export class ListaPessoaComponent implements OnInit {
+	
+	pessoas: string[]; 
 
-  constructor() { }
+  	constructor() { }
 
-  ngOnInit() {
-  }
+  	ngOnInit() {
+  	}
+
+  	listar(){
+
+  	}
 
 }

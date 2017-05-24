@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'Livro Angular 2';
+  foto: string = 'favicon.ico';
+
+	msgAlerta(): void {
+		alert('Livro Angular 2');
+	} //Function do botao de ação de mostrar Alert, declarada dentro de sua class AppComponent
 }

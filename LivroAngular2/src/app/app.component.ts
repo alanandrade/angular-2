@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { AlertaService } from './alerta.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,7 +11,11 @@ export class AppComponent {
   title = 'Angular 2';
   foto: string = 'favicon.ico';
 
-	msgAlerta(): void {
-		alert('Livro Angular 2');
-	} //Function do botao de ação de mostrar Alert, declarada dentro de sua class AppComponent
+  constructor(private service: AlertaService){ }
+
+  enviarMsg(): void {
+  	this.service.msgAlerta();
+  }
+
+  //Function do botao de ação de mostrar Alert, declarada dentro de sua class AppComponent
 }

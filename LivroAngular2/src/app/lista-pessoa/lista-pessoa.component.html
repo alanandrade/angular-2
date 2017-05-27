@@ -4,6 +4,9 @@
 
 <label for="nome">Digite seu nome</label>
 <input type="text" id="nome" value="Alan Andrade" [(ngModel)]="nome">
+
+<button (click)="enviarNome()">Enviar Nome</button> <!--Evento binding - envio dado do input para o componente(classe)-->
+
 <p>{{nome}}</p>
 
 <!--Two-way data binding = Se for atualizado pelo template, o valor vai para a classe

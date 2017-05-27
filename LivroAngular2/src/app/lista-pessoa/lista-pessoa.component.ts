@@ -21,7 +21,9 @@ export class ListaPessoaComponent implements OnInit {
   	ngOnInit() {
   	}
 
-  	listar(){
+    enviarNome() {
+      this.service.setPessoa(this.nome);
+    } //Pega o evento do click enviarNome e envia para o service setPessoa
 
-  	}
+  	listar(){}
 }

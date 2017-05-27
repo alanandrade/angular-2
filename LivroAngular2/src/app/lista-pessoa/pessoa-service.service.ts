@@ -5,4 +5,8 @@ export class PessoaServiceService {
 
   constructor() { }
 
+  getPessoas(): string[] {
+  	return['João', 'Maria', 'Angular 2', 'Alan Andrade']
+  }
+
 }

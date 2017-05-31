@@ -2,5 +2,8 @@
 
 <input type="text" [ngModel]="nome" (ngModelChange)="mudar($event)">
 <!--Two-way-binding separado = ng model altera, envia do componente para o template - ngModelChange envia do template para o componente-->
+<p>{{nome}}</p>
 
+
+<input type="text" bindon-ngModel="nome"> <!-- Outra forma de declaracao do ngModel-->
 <p>{{nome}}</p>

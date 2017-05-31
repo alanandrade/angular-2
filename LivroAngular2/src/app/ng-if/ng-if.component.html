@@ -19,3 +19,9 @@
 <p *ngIf="cursos.length == 0">Não temos curso disponível</p>
 <p *ngIf="cursos.length > 0">Agora temos curso cadastrado</p>
 <button (click)="addCurso()">add novo curso</button>
+
+<p *ngIf="mostraNome">com uma variável</p>
+<!--NG if é mais seguro e tem menos processamento que o hidden, pois altera no dom-->
+
+<p [hidden]="getValor">Parágrafo com Hidden</p>
+<!--Hidden é mais inseguro e mais rápido, pois somente adiciona o hidden na tag e não altera o dom-->

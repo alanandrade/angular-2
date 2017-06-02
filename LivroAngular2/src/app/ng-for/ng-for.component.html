@@ -1,5 +1,8 @@
 <h2>Ng-for</h2>
 
-<ul *ngFor="let nome of nomes, let i= index">
-	<li>Nome da pessoa é: {{nome}}, está na posição {{i + 1}}</li>
+<button (click)="atualizar()">Atualizar</button>
+
+<ul *ngFor="let nome of nomes, let i= index; trackBy:meuSave">
+<!--O trackBy diz para o *ngFor usar o método meuSave para validar o conteúdo da nova lista, e somente renderizar conteúdos que ainda não estão no navegador.-->
+	<li>Nome da pessoa é: {{nome.nome}} com id {{nome.id}}, está na posição {{i + 1}}</li>
 </ul>

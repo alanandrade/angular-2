@@ -15,6 +15,7 @@ import { NgSwitchCaseComponent } from './ng-switch-case/ng-switch-case.component
 import { NgForComponent } from './ng-for/ng-for.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
+import { NgContentComponent } from './ng-content/ng-content.component';
 
 @NgModule({ //Para determinar ao Angular 2 que a classe AppModule seja considerada como uma classe de configuração de módulo, temos de colocar o decorador @ngModule
   declarations: [ //todas as classes e componentes que criaremos
@@ -27,7 +28,8 @@ import { NgStyleComponent } from './ng-style/ng-style.component';
     NgSwitchCaseComponent,
     NgForComponent,
     NgClassComponent,
-    NgStyleComponent
+    NgStyleComponent,
+    NgContentComponent
   ],
   imports: [ //módulos internos do Angular 2 e de terceiros
     BrowserModule,

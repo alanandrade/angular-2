@@ -21,3 +21,11 @@ Executará o método digitouVarTemplate(valorInput) , que passará como parâmet
 <input #qtdSenha (keyup)="validaSenha(qtdSenha.value)" type="password">
 
 <button [disabled]="! habilitarBotao" (click)="gravarSenha(qtdSenha.value)">Gravar senha</button>
+
+<!-- Input KEUYUP.ENTER -->
+
+<h3>evento keyup.enter adicionar na lista</h3>
+<input type="text" #conteudo (keyup.enter)="adicionar(conteudo.value); conteudo.value=''">
+<ul>
+	<li *ngFor="let item of valores">{{item}}</li>
+</ul>

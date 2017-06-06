@@ -9,6 +9,8 @@ export class EventBindingComponent implements OnInit {
 
 	habilitarBotao: boolean = false;
 
+	valores: string [] = [];
+
 	constructor() { }
 
 	ngOnInit() {
@@ -37,6 +39,10 @@ export class EventBindingComponent implements OnInit {
 
 	gravarSenha(senha): void{
 		alert("Senha gravada com sucesso, sua senha é: " + senha);
+	}
+
+	adicionar(conteudo: string): void {
+		this.valores.push(conteudo);
 	}
 
 }

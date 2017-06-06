@@ -3,3 +3,21 @@
 <button (click)="meuClick()">Clique aqui</button>
 
 <input (keyup)="digitou($event)">
+
+
+
+
+<!-- 
+Para facilitar o acesso direto ao valor do elemento HTML que está na página, usamos as variáveis de template, no caso #valorInput
+
+Passo para o método digitouVarTemplate como parametro somente o valor da váriavel de template
+
+Executará o método digitouVarTemplate(valorInput) , que passará como parâmetro a variável de template valorInput -->
+<input #valorInput (keyup)="digitouVarTemplate(valorInput.value)">
+<br/>
+
+<!-- Validação de campo -->
+<!-- Atribuo a variavel do template no que se torna parametro parâmetro para o método-->
+<input #qtdSenha (keyup)="validaSenha(qtdSenha.value)" type="password">
+
+<button [disabled]="! habilitarBotao" (click)="gravarSenha(qtdSenha.value)">Gravar senha</button>

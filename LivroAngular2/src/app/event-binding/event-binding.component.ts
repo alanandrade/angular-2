@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventBindingComponent implements OnInit {
 
+	habilitarBotao: boolean = false;
+
 	constructor() { }
 
 	ngOnInit() {
@@ -18,6 +20,23 @@ export class EventBindingComponent implements OnInit {
 
 	digitou($event): void{
 		console.log($event);
+	}
+
+	digitouVarTemplate(valor): void{
+		console.log(valor);
+	}
+
+	//O parametro (qtdSenha.value) do template, se torna outro parametro no compenente - Mais podemos usar a variavel do template
+	validaSenha(valor: string): void{
+		if(valor.length >= 5){
+			this.habilitarBotao = true;
+		}else{
+			this.habilitarBotao = false;
+		}
+	}
+
+	gravarSenha(senha): void{
+		alert("Senha gravada com sucesso, sua senha é: " + senha);
 	}
 
 }

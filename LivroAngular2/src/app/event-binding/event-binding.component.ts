@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class EventBindingComponent implements OnInit {
 
 	habilitarBotao: boolean = false;
-
 	valores: string [] = [];
+	idade: number = 0; //Exibi está varoável no template
 
 	constructor() { }
 
@@ -43,6 +43,11 @@ export class EventBindingComponent implements OnInit {
 
 	adicionar(conteudo: string): void {
 		this.valores.push(conteudo);
+	}
+
+	verIdade(valor): void {
+		let ano = new Date(); //Captura a data atual
+		this.idade = ano.getFullYear() - valor; //Adiciona dentro de ano, o ano atual e faz menos o ano digitado. E adiciona na variavel idade.
 	}
 
 }

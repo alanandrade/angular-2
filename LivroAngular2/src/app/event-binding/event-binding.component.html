@@ -29,3 +29,9 @@ Executará o método digitouVarTemplate(valorInput) , que passará como parâmet
 <ul>
 	<li *ngFor="let item of valores">{{item}}</li>
 </ul>
+
+<!-- Evento BLUR -->
+<h3>blur</h3>
+
+Ano de Nascimento: <input type="text" #data (blur)="verIdade(data.value)">
+<p>Você tem: {{idade}} anos de idade</p>

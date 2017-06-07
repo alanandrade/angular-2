@@ -14,5 +14,4 @@ export class InputOutputComponent implements OnInit {
 
 	ngOnInit() {
   	}
-
 }

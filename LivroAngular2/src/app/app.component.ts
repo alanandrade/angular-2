@@ -18,6 +18,4 @@ export class AppComponent {
   enviarMsg(): void {
   	this.service.msgAlerta();
   }
-
-
 }

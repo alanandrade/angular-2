@@ -18,7 +18,8 @@ export class InputOutputComponent implements OnInit {
 	ngOnInit() {
   	}
 
-  	enviarNome(value) {
-  		this.nomeClicado.emit(value);
+  	enviarNome(item) { //Método será responsavel por emitir o nome do elemento clicado
+  		this.nomeClicado.emit(value); //que será responsável por notificar o componente pai sobre a emissão do evento do EventEmitter()
+  		//Dessa forma, estamos emitindo pela variável nomeClidado o valor que foi passado pelo parâmetro value
   	}
 }

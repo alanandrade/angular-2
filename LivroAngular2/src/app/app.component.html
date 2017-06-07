@@ -45,6 +45,9 @@ classe do componente para alguma propriedade de tag do template-->
 <!--<app-event-binding></app-event-binding>-->
 
 <app-input-output [menu]="desenvolvimento" (nomeClicado)="valorPassado($event)"></app-input-output>
+<!--método com o nome de valorPassado($event)* que receberá o valor enviado do componente filho como parâmetro (nomeClicado).-->
 <p>Você clicou em: {{valor}}</p>
+
+
 <!--Elemento PAI de input-output-->
 <!-- Estamos referenciando o array desenvolvimento que está no componente pai ( app.component ) com uma propriedade menu do componente filho ( input-output.component )-->

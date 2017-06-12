@@ -18,6 +18,7 @@ import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgContentComponent } from './ng-content/ng-content.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { InputOutputComponent } from './input-output/input-output.component';
+import { FormularioComponent } from './formulario/formulario.component';
 
 @NgModule({ //Para determinar ao Angular 2 que a classe AppModule seja considerada como uma classe de configuração de módulo, temos de colocar o decorador @ngModule
   declarations: [ //todas as classes e componentes que criaremos
@@ -33,7 +34,8 @@ import { InputOutputComponent } from './input-output/input-output.component';
     NgStyleComponent,
     NgContentComponent,
     EventBindingComponent,
-    InputOutputComponent
+    InputOutputComponent,
+    FormularioComponent
   ],
   imports: [ //módulos internos do Angular 2 e de terceiros
     BrowserModule,

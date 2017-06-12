@@ -19,7 +19,7 @@ export class InputOutputComponent implements OnInit {
   	}
 
   	enviarNome(item) { //Método será responsavel por emitir o nome do elemento clicado
-  		this.nomeClicado.emit(value); //que será responsável por notificar o componente pai sobre a emissão do evento do EventEmitter()
+  		this.nomeClicado.emit(item); //que será responsável por notificar o componente pai sobre a emissão do evento do EventEmitter()
   		//Dessa forma, estamos emitindo pela variável nomeClidado o valor que foi passado pelo parâmetro value
   	}
 }

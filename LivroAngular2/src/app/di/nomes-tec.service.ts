@@ -1,21 +1,17 @@
-import { Injectable, Optional } from '@angular/core';
-import { MeuLogService } from './meu-log.service';
+import { Injectable } from '@angular/core';
 
 @Injectable()
 export class NomesTecService {
 
-  //meuLog: MeuLogService;
-
-  constructor(@Optional() private meulog: MeuLogService) {
-    //this.meuLog = meulog;
-   }
-
-  getNomesTec(): string [] {
-
-    if(this.meulog) {
-      this.meulog.setLog('consultou o array de tecnologias');
+   getNomesTec(): string [] {
+      this.meulog.setLog('Consultou o array de tecnologias');
+      return ['Angular 2', 'TypeScript', 'JavaScript', 'HTML 5', 'CSS 3', 'Desenvolvendo com Angular 2'];
     }
-    
-    return ['Angular 2', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'Desenvolvendo com Angular 2'];
-  }
+
+    meuLog = MeuLogService;
+
+	 constructor(meuLog: MeuLogService) {
+	   this.meuLog = meulog;//Pega a variavel acima e passa para meuLog
+   }
+   //declaramos que essa classe precisa de uma instância da MeuLogService, que fica em outro servioço, para funcionar corretamente
 }

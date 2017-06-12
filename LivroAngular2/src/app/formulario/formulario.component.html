@@ -40,7 +40,7 @@
 
 	<br>
 
-	<button type="submit">Enviar</button>
+	<button type="submit" [disabled]="cadastro.form.invalid">Enviar</button>
 </form>
 
 <p>{{todosContatos}}</p>
